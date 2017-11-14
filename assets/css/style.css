@@ -58,6 +58,13 @@ body {
 	font-weight: 200;
 }
 
+.nav-links:visited {
+	color: #1c1c1c;
+	text-decoration: none;
+	margin-left: 30px;
+	font-weight: 200;
+}
+
 .nav-links:hover {
 	color: #F7CA18;
 	font-weight:400;
@@ -96,14 +103,14 @@ hr {
 	font-weight:200;
 }
 
-.about-container {
+.content-container {
 	background-color: #ffffff;
 	float: left;
 	width: 610px;
 	padding:30px 20px 30px 20px;
 }
 
-#about-title {
+#content-title {
 	font-family: 'Montserrat', Arial, 'sans-serif';
 	font-size:1.5em;
 	letter-spacing: 1px;
@@ -137,7 +144,7 @@ hr {
 .foot {
 	background-color: #fff;
 	clear: left;
-	position: absolute;
+	position: fixed;
 	left: 0;
 	right: 0;
 	bottom: 0;
@@ -153,6 +160,44 @@ hr {
 	letter-spacing: 1px;
 	text-align:center;
 	padding-top:14px;
+}
+
+/* Portfolio Grid */
+
+.row {
+	max-width:610px;
+}
+
+.project {
+	display:inline-block;
+	margin: 20px 15px -25px 15px;
+}
+
+.projectImg {
+	position:relative;
+	background-size:cover;
+	max-width:270px;
+	max-height:200px;
+	z-index:1;
+}
+
+.projectInfobox {
+	position:relative;
+	background-color: #F7CA18;
+	height: 40px;
+	max-width:290px;
+	left: 0px;
+	top:-50px;
+	z-index:2;
+	opacity: .95;
+}
+
+.projectTitle {
+	font-family: 'Montserrat', Arial, 'sans-serif';
+	font-size:1em;
+	letter-spacing: 1px;
+	text-align:center;
+	padding-top:11px;
 }
 
 /* Contact Form */
@@ -195,7 +240,7 @@ hr {
 }
 
 #submit-btn {
-	background-color: #F7CA18; /* Green */
+	background-color: #F7CA18;
     border: none;
     border-radius: 0px;
     color: #1c1c1c;
